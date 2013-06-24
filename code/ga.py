@@ -24,7 +24,7 @@ class Sinusoid(object):
 			self.offset = 200.0*random.random()
 	
 	def get(self,t):
-		return (self.a*math.sin(self.freq*t - self.offset) + self.b*math.cos(self.freq*t - self.offset) + self.c) #so ugly...
+		return (self.a*math.sin(2*pi*self.freq*t - self.offset) + self.b*math.cos(2*pi*self.freq*t - self.offset) + self.c) #so ugly...
 
 	def score(self,tset,yset):
 		err = []
